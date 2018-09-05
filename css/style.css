@@ -275,6 +275,11 @@ body {
   position: relative;
   max-width: 90%;
   width: 100%;
+	display: none;
+}
+
+.banner-slide-img .visible {
+	display: inline-block;
 }
 
 .banner-slide-cnt {
