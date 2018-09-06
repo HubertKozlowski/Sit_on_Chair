@@ -1,0 +1,38 @@
+.main-information {
+  padding:65px 0;
+}
+
+.info-box {
+  position: relative;
+  display: inline-block;
+}
+
+.info-box-img {
+  display: block;
+}
+
+.info-box-container {
+  position: absolute;
+  left:0;
+  bottom:10px;
+  width:100%;
+  background: rgba(255,255,255,0.5);
+  padding:10px 15px;
+}
+
+.info-box-title {
+  border-bottom: 7px solid var(--color);
+  font-weight: 600;
+  width:50%;
+  font-size:15px;
+}
+
+.info-box-text {
+  border:1px solid #ddd;
+  height:225px;
+  padding:15px;
+}
+
+.info-box-lorem {
+  margin-top:15px;
+}

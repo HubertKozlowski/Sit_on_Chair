@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-	//ŁAPIEMY ZMIENNE
+
 		var nextBtn = document.querySelector('.banner-next');
 		var prevBtn = document.querySelector('.banner-prev');
 		var images = document.querySelectorAll('.slide');
@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		console.log(images.length);
 
-		//PISZEMY FUNKCJE
 		function nextPicture() {
 				images[currentImageIndex].classList.remove('visible');
 
@@ -33,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 				images[currentImageIndex].classList.add('visible');
 		}
 
-		//PISZEMY LOGIKE / DZIAŁANIE
 		images[currentImageIndex].classList.add('visible');
 		nextBtn.addEventListener('click', nextPicture);
 		prevBtn.addEventListener('click', prevPicture);

@@ -1,0 +1,64 @@
+.main-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main-footer .col-1-2:nth-of-type(2) {
+  text-align: right;
+}
+
+.main-footer .copyright {
+  font-size: 16px;
+  color: #8b8b8b;
+  line-height:36px;
+}
+
+.main-footer .social-icons {
+  display: inline-block;
+}
+
+.main-footer .footer-logo {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #9B9B9B;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 70px;
+  vertical-align: top;
+  line-height: 40px;
+}
+
+.social-icons {
+  margin:0;
+  padding:0;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  text-indent: -999999px;
+  overflow: hidden;
+  text-align: left;
+  display: inline-block;
+}
+
+.flickr {
+  background: url(../images/flickr.png) no-repeat;
+}
+
+.vimeo {
+  background: url(../images/vimeo.png) no-repeat;
+}
+
+.pinterest {
+  background: url(../images/pinterest.png) no-repeat;
+}
+
+.twitter {
+  background: url(../images/twitter.png) no-repeat;
+}

@@ -1,0 +1,130 @@
+.main-price {
+  background: #F1F1F1;
+  padding:75px 0;
+}
+
+.price-box {
+  margin-top: 20px;
+  background: #F9F9F9;
+  border: 2px solid #D4D4D4;
+  height: 520px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price-box:before {
+  content: "";
+  display: block;
+  width:50px;
+  height: 50px;
+  border: 2px solid #D4D4D4;
+  background: #D4D4D4;
+  box-shadow: inset 0 0 0 12px white;
+  box-sizing: border-box;
+  position: relative;
+  left:50%;
+  top: 0;
+  transform: translate(-50%, -70%);
+  border-radius: 50%;
+}
+
+.price-box-title {
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color);
+  margin-top: -20px;
+  font-weight: 400;
+}
+
+.price-box-price {
+  display: flex;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  border: 2px solid #D4D4D4;
+  background: #FFF;
+  margin: 0 auto 30px auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.price-box-container {
+  display: flex;
+  color: #c2c2c2;
+}
+
+.price-box-container span {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.price-box-container sup {
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.price-box .price-text {
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #c2c2c2;
+}
+
+.price-box .price-box-offer {
+  list-style:none;
+  padding:0;
+  margin:0;
+  margin-bottom:auto;
+}
+
+.price-box .price-box-offer li {
+  background: #E4E4E4;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0;
+  color: #8F8F8F;
+}
+
+.price-box .price-box-offer li:nth-of-type(even) {
+  background: #F1F1F1;
+}
+
+.price-box .price-box-btn {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.active {
+  background: var(--color);
+  border-color: var(--color);
+}
+
+.active .price-box-title {
+  color: #FFF;
+}
+
+.active .price-box-price {
+  border-color: var(--color);
+}
+
+.active .price-box-container span,
+.active .price-box-container sup,
+.active .price-text {
+  color: var(--color)
+}
+
+.active .price-box-btn {
+  background: #FFF;
+  color: var(--color);
+  transition:0.5s all;
+}
+
+.price-box.active:before {
+  border: 2px solid var(--color);
+  background: white;
+  box-shadow: inset 0 0 0 12px var(--color);
+}
