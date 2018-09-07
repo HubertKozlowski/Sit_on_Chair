@@ -126,7 +126,6 @@
         <div class="row">
           <div class="col">
             <div class="price-box">
-              <!-- <div class="price-ball"></div> -->
               <h2 class="price-box-title">Basic plan</h2>
               <div class="price-box-price">
                 <strong class="price-box-container">
@@ -191,40 +190,39 @@
 	          <div class = "choice">
 							<h2 class="section-title">SKOMPONUJ SWOJE KRZESŁO</h2>
 	            <div class="form-row">
-								<div class="drop_down_list">
-                    <span class="list_label">Wybierz rodzaj</span>
-                    <span class="list_arrow"></span>
-                    <ul class="list_panel">
-                        <li>Clair</li>
-                        <li>Margarita</li>
-                        <li>Selena</li>
-                    </ul>
+								<div id="chairName" class="drop_down_list">
+                  <span class="list_label">Wybierz rodzaj</span>
+                  <span class="list_arrow"></span>
+                  <ul class="list_panel show_list">
+                    <li data-chair-price='150'>Clair</li>
+                    <li data-chair-price='250'>Margarita</li>
+                    <li data-chair-price='350'>Selena</li>
+                  </ul>
                 </div>
 	            </div>
 	            <div class="form-row">
-								<div class="drop_down_list">
-                    <span class="list_label">Wybierz kolor</span>
-                    <span class="list_arrow"></span>
-                    <ul class="list_panel">
-                        <li>Czerwony</li>
-                        <li>Czarny</li>
-                        <li>Pomarańczowy</li>
-                    </ul>
+								<div id="chairColor" class="drop_down_list">
+                  <span class="list_label">Wybierz kolor</span>
+                  <span class="list_arrow"></span>
+                  <ul class="list_panel show_list">
+                    <li data-color-price='50'>Czerwony</li>
+                    <li data-color-price='80'>Czarny</li>
+                    <li data-color-price='60'>Pomarańczowy</li>
+                  </ul>
                 </div>
 	            </div>
 	            <div class="form-row">
-								<div class="drop_down_list">
-                    <span class="list_label">Wybierz kolor</span>
-                    <span class="list_arrow"></span>
-                    <ul class="list_panel">
-                        <li>Czerwony</li>
-                        <li>Czarny</li>
-                        <li>Pomarańczowy</li>
-                    </ul>
+								<div id="chairMaterial" class="drop_down_list">
+                  <span class="list_label">Wybierz materiał</span>
+                  <span class="list_arrow"></span>
+                  <ul class="list_panel show_list">
+                    <li data-pattern-price='50'>Tkanina</li>
+                    <li data-pattern-price='250'>Skóra</li>
+                  </ul>
                 </div>
 	            </div>
 							<label class="form-checkbox transport_text">
-								<input type="checkbox" name="checkbox" id="transport">
+								<input data-transport-price='50' type="checkbox" name="checkbox" id="transport">
 								<span></span>
 								Transport
 							</label>
@@ -320,5 +318,6 @@
       </div>
     </footer>
 	<script src="js/slider.js"></script>
+	<script src="js/calculator.js"></script>
   </body>
 </html>

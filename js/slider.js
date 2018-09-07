@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		var images = document.querySelectorAll('.slide');
 		var currentImageIndex = 0;
 
-		console.log(images.length);
-
 		function nextPicture() {
 				images[currentImageIndex].classList.remove('visible');
 
